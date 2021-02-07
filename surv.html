@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+    <script>
+        
+
+
+        function myFunction(){
+            var newName = document.getElementById("firstName").value;
+            document.getElementById("firstName").value=" ";
+            document.getElementById("Email").value=" ";
+           
+
+            var select =document.getElementById("selection");
+            select.onchange = function(){
+                location.href= this.options[this.selectedIndex].value
+
+            }
+            select.selectedIndex = 0;
+            
+            document.getElementById("wheel").checked = false;
+            document.getElementById("car").checked = false;
+            document.getElementById("lightB").checked = false;
+            document.getElementById("computer").checked = false;
+
+            document.getElementById("fly").checked = false;
+            document.getElementById("energy").checked = false;
+            document.getElementById("robots").checked = false;
+            document.getElementById("internet").checked = false;
+
+            document.getElementById("future").value="";
+
+            alert("Congrats");
+           
+
+
+        
+
+        
+
+            
+            
+        }
+    
+      
+           
+
+    </script>
+</head>
+<body>
+    <!--Title-->
+    <h1>Technologies of the Past and the Future Form</h1>
+    <!--Form-->
+    <form>
+        <!--Text Boxes-->
+        <label for="firstName"> First Name:</label>
+        <input type="text" id="firstName" name="firstName" required placeholder="First Name Here"><br>
+        <label for="Email"> Email:</label>
+        <input type="text" id="Email" name="Email" required placeholder="Email Here"><br>
+        <!--Drop Down Box-->
+        <h4>Would you rather get to talk to past reletives or future decendents?</h4>
+        <select name="selection" id="selection">
+            <option>--</option>
+            <option>Past</option>
+            <option>Future</option>
+        </select>
+        <br><br>
+        <!--Radio buttons-->
+        <h4>What is the best invention created out of these four?</h4>
+        <input type="radio" id = "wheel" name="rad" value="wheel">
+        <label for="wheel">Wheel</label>
+        <br>
+        <input type="radio" id = "car" name="rad" value="car">
+        <label for="car">Car</label>
+        <br>
+        <input type="radio" id = "lightB" name="rad" value="lightB">
+        <label for="lightB">Light Bulb</label>
+        <br>
+        <input type="radio" id = "computer" name="rad" value="computer">
+        <label for="computer">Computer</label>
+        <br>
+        <!--Checkboxes-->
+        <h4>Check the future possible inventions that will have a big impact.</h4>
+        <input type="checkbox" id = "fly" name="fivOne" value="fly">
+        <label for="fly">Flying Car</label>
+        <br>
+        <input type="checkbox" id = "energy" name="fivTwo" value="energy">
+        <label for="energy">Energy Storing Bricks</label>
+        <br>
+        <input type="checkbox" id = "robots" name="fivThree" value="robots">
+        <label for="robots">Robots</label>
+        <br>
+        <input type="checkbox" id = "internet" name="fivFour" value="internet">
+        <label for="internet">Internet for Everyone</label>
+        <br>
+        <!--Text Areas-->
+        <h4>What technology do you eant to see in the future and why?</h4>
+        <textarea id = "future" name="future" rows="5" cols="50">
+            
+        </textarea>
+        <br>
+        <button type ="button" onclick="myFunction()">Submit</button>
+    
+
+
+
+
+       
+
+
+    </form>
+    
+   
+    
+</body>
+</html>

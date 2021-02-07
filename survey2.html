@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lange="en">
+<head>
+    <meta charsets="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey</title>
+    <link rel="stylesheet" href="survey2.css">
+    
+   
+            
+   
+    <script>
+
+        function myFunction(){
+           
+            
+
+            alert("Thanks for your submission")
+
+            
+        }
+
+    </script>
+</head> 
+<body>
+    <form id="Survey-Form" action="my-handling-form-page" method="post"></form>
+    <h1> Movie Survey</h1>
+    
+    
+    <form onsubmit="myFunction()">
+        
+        <label for="Name"> Name:</label>
+        <input type="text" id="Name" name="Name" required>
+
+        <fieldset>
+
+            <div>
+                <p>What is your favorite movie?</p>
+                <input type="text" id="Movie" name="title" placeholder="Movie Title">
+            </div>
+
+        </fieldset>
+
+
+
+        <fieldset>
+            <div>
+                <p> Give a brief description of the movie</p>
+                <textarea id="msg" name="user_message" rows="5" cols="60" placeholder="Enter Text Here"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+
+            <div>
+                <p>What is your favorite movie genre?</p>
+                <input type="radio" id="Horror" name="genre" value="Horror"> Horror
+                <input type="radio" id="Drama" name="genre" value="Drama"> Drama
+                <input type="radio" id="Action" name="genre" value="Action"> Action
+                <input type="radio" id="Sci-Fi" name="genre" value="Sci-Fi"> Sci-Fi
+                <input type="radio" id="Comedy" name="genre" value="Comedy"> Comedy
+                <input type="radio" id="Other" name="genre" value="Other"> Other
+
+        </fieldset>
+
+        
+        <fieldset>
+            <div>
+                <p>How many times have you seen the movie?</p>
+                <select id="Dropbox">
+                    <option value="A0"> </option>
+                    <option value="A1">1</option>
+                    <option value="A2">2-5</option>
+                    <option value="A3">6+</option>
+        
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+
+
+            <p>Why is this movie your favorite?</p>
+            <input type="checkbox" id="Lead Character" name="Lead Character" value="Lead Character"> Lead Character
+            <input type="checkbox" id="Supporting Character" name="Supporting Character" value="Supporting Character"> Supporting Character
+            <input type="checkbox" id="Screenplay" name="Screenplay" value="Screenplay"> Screenplay
+            <input type="checkbox" id="Story" name="Story" value="Story"> Story
+            <input type="checkbox" id="Other2" name="Other" value="Other"> Other
+
+        </fieldset>
+
+        <br>
+        <button type="submit" >Submit</button>
+
+        
+    </form>
+
+</body>   
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="survey.css">
+    <script>
+
+
+
+        
+        //pop up to show that the user has completed the survey
+
+        function myFunction(){
+           
+            alert("Congrats you Finished the Survey");    
+            
+        }
+    
+      
+           
+
+    </script>
+</head>
+<body>
+    <!--Title-->
+    <h1>Technologies of the Past and the Future Form</h1>
+    <!--Form-->
+    <form onsubmit="myFunction()">
+        <!--Text Boxes-->
+        <label for="firstName"> First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name Here" required><br>
+        <label for="Email"> Email:</label>
+        <input type="text" id="Email" name="Email" placeholder="Email Here" required><br>
+        <!--Drop Down Box-->
+        <h4>Would you rather get to talk to past relatives or future descendants?</h4>
+        <select name="selection" id="selection">
+            <option>--</option>
+            <option>Past</option>
+            <option>Future</option>
+        </select>
+        <br><br>
+        <!--Radio buttons-->
+        <h4>What is the best invention created out of these four?</h4>
+        <input type="radio" id = "wheel" name="rad" value="wheel">
+        <label for="wheel">Wheel</label>
+        <br>
+        <input type="radio" id = "car" name="rad" value="car">
+        <label for="car">Car</label>
+        <br>
+        <input type="radio" id = "lightB" name="rad" value="lightB">
+        <label for="lightB">Light Bulb</label>
+        <br>
+        <input type="radio" id = "computer" name="rad" value="computer">
+        <label for="computer">Computer</label>
+        <br>
+        <!--Checkboxes-->
+        <h4>Check the future possible inventions that will have a big impact.</h4>
+        <input type="checkbox" id = "fly" name="fivOne" value="fly">
+        <label for="fly">Flying Car</label>
+        <br>
+        <input type="checkbox" id = "energy" name="fivTwo" value="energy">
+        <label for="energy">Energy Storing Bricks</label>
+        <br>
+        <input type="checkbox" id = "robots" name="fivThree" value="robots">
+        <label for="robots">Robots</label>
+        <br>
+        <input type="checkbox" id = "internet" name="fivFour" value="internet">
+        <label for="internet">Internet for Everyone</label>
+        <br>
+        <!--Text Areas-->
+        <h4>What technology do you want to see in the future and why?</h4>
+        <textarea id = "future" name="future" rows="5" cols="50">
+            
+        </textarea>
+        <br>
+        <button type ="submit">Submit</button>
+    
+
+
+
+
+       
+
+
+    </form>
+    
+   
+    
+</body>
+</html>

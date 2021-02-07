@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+h4{
+    font-family:'Courier New', Courier, monospace; 
+}
+form{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+button{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+label{
+    font-family:'Courier New', Courier, monospace;
+}
+body{
+    background-color: lightskyblue;
+}
