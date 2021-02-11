@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="exercise.css">
+    <title>FlexBox</title>
+</head>
+<body>
+    <h2>Four Entry Layout using a FlexBox</h2>
+    <p></p>
+    
+
+    <div class="flexboxRow">
+        <div class="flexboxColumn" style="background-color: whitesmoke;">
+            <h2>Link to W3 Schools</h2>
+            <p><a href="https://www.w3schools.com/" target="_blank">Visit w3schools</a></p>
+        </div>
+        <div class="flexboxColumn" style="background-color: gray;">
+            <h2>An image</h2>
+            <p><img src="road.jpg" alt="road" style="width: 50%;"></p>
+        </div>
+        <div class="flexboxColumn" style="background-color: whitesmoke;">
+            <h2>A Video</h2>
+            <p><video width="50%" height ="50%" controls>
+            <source src="video.mp4" type="video/mp4">
+                Your browser does not support video
+            </video>
+            </p>
+
+        </div>
+        <div class ="flexboxColumn" style="background-color: darkgray;">
+            <p id="demo"></p>
+            <h2>Entry 4</h2>
+            <p>click button to get your coordinates</p>
+            <button onclick="getLocation()">Try it</button>
+
+            <script>
+                var x= document.getElementById("demo");
+
+                function getLocation(){
+                    if(navigator.geolocation){
+                        navigator.geolocation.getCurrentPosition(showPosition);
+
+                    }else{
+                        x.innerHTML ="Geolocation is not supported";
+
+                    }
+
+
+                }
+                function showPosition(position){
+                    x.innerHTML ="Latitude " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+
+                }
+            </script>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
