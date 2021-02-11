@@ -12,31 +12,35 @@
     
 
     <div class="flexboxRow">
+        <!--First Column with link-->
         <div class="flexboxColumn" style="background-color: whitesmoke;">
-            <h2>Link to W3 Schools</h2>
-            <p><a href="https://www.w3schools.com/" target="_blank">Visit w3schools</a></p>
+            <h2>Link to Google</h2>
+            <p><a href="https://www.google.com" target="_blank">Visit Google</a></p>
         </div>
+        <!--Second Column with picture-->
         <div class="flexboxColumn" style="background-color: gray;">
             <h2>An image</h2>
-            <p><img src="road.jpg" alt="road" style="width: 50%;"></p>
+            <p><img src="MyMedia/road.jpg" alt="road" style="width: 50%;"></p>
         </div>
+        <!--Third Column with video-->
         <div class="flexboxColumn" style="background-color: whitesmoke;">
             <h2>A Video</h2>
             <p><video width="50%" height ="50%" controls>
-            <source src="video.mp4" type="video/mp4">
+            <source src="MyMedia/video.mp4" type="video/mp4">
                 Your browser does not support video
             </video>
             </p>
 
         </div>
-        <div class ="flexboxColumn" style="background-color: darkgray;">
-            <p id="demo"></p>
+        <!-- Fourth Column with Geolocation API-->
+        <div class ="flexboxColumn" style="background-color: gray;">
+            <p id="Loc"></p>
             <h2>Entry 4</h2>
             <p>click button to get your coordinates</p>
             <button onclick="getLocation()">Try it</button>
 
             <script>
-                var x= document.getElementById("demo");
+                var x= document.getElementById("Loc");
 
                 function getLocation(){
                     if(navigator.geolocation){
