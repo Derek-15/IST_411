@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Kalam', cursive;
+}
+/* Title Row West Peaks*/
+.logoRow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    flex: 25%;
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+    .logoRow{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px){
+    .logo{
+        flex: 50%;
+    }
+}
+
+    
+/*Menu*/
+.menuRow{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.menuCol{
+    flex:25%;
+    padding: 2px;
+    width: 100%;
+    text-align: right;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .menuRow{
+        flex-direction: column;
+    
+    }
+}
+
+@media screen and (max-width: 992px){
+    .menuCol{
+        flex: 50%;
+    }
+}
+
+/*Background Image*/
+.backRow{
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-image: url('MyMedia/breck.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 600px;
+    
+    text-align: center;
+
+
+
+
+    margin: 0px;
+    padding: 40px;
+    border: 0px;
+
+}
+.backCol{
+    flex: 25%;
+    margin: 0px;
+    padding: 40px;
+    border: 0px;
+}
+@media screen and (max-width: 600px){
+    .backRow{
+        flex-direction: column;
+    
+    }
+}
+
+@media screen and (max-width: 992px){
+    .backCol{
+        flex: 50%;
+    }
+}
+
+/*Store Area*/
+.selectRow{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: 300px;
+
+
+}
+.selectCol{
+    flex: 20%;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    width:50%;
+
+}
+@media screen and (max-width: 600px){
+    .selectRow{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px){
+    .selectCol{
+        flex: 50%;
+    }
+}
+
+/*Email and Saftey*/
+
+.emailRow{
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.emailCol{
+    flex: 25%;
+    padding: 20px;
+    text-align: center;
+    border-style: groove;
+}
+@media screen and (max-width: 600px){
+    .emailRow{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px){
+    .emailCol{
+        flex: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+

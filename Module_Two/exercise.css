@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
 }
+
 .flexboxRow{
     display: flex;
     flex-wrap: wrap;
@@ -9,13 +10,13 @@
     flex: 25%;
     padding: 20px;
 }
-@media screen and (max-width: 992px){
-    .flexboxColumn{
-        flex: 50%;
-    }
-}
 @media screen and (max-width: 600px){
     .flexboxRow{
         flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px){
+    .flexboxColumn{
+        flex: 50%;
     }
 }
