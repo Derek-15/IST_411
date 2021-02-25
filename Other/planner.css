@@ -1,0 +1,73 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'RocknRoll One', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height:8vh;
+    background-color: salmon;
+
+}
+.logo{
+    text-transform:capitalize;
+    letter-spacing:5px;
+    font-size: 20px;
+    color: white;
+}
+.nav-links{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+ 
+}
+.nav-links :hover{
+    background-color:lightskyblue;
+
+}
+.nav-links li{
+    list-style: none;
+    
+
+}
+.nav-links a{
+    color:white;
+    letter-spacing:3px;
+    font: size 14px;
+}
+
+@media screen and (max-width:768px){
+    .nav-links{
+        width:60%;
+    }
+}
+
+.ERow{
+    display: flex;
+    flex-wrap: wrap;
+    background: gray;
+    height: 600px;
+    
+    
+}
+.ECol{
+    flex: 25%;
+    padding: 10px;
+    max-width: 16%;
+    border:groove;
+    border-color: black;
+
+}
+@media screen and (max-width: 600px){
+    .ERow{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px){
+    .ECol{
+        flex: 50%;
+    }
+}
