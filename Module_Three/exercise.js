@@ -9,7 +9,7 @@
          alert("please enter a word to check");
          return false;
      } else if((tableNewNumber != 1) && (tableNewNumber != 2)){
-         alert("please enter number 0 or 1");
+         alert("please enter number 1 or 2");
          document.forms["entry"]["entryNumber"].value= "";
          return false;
       }else{
