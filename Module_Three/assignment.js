@@ -23,9 +23,6 @@ function listAdd(){
 
          //Checks one is entered if not a two was entered
         if(tableNewNumber==1){
-            
-            
-
 
             var tableWordLength = document.forms["entry"]["entryWord"].value.length;
             var palindrome = true;

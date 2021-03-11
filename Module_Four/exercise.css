@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.flexboxRow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexboxCol{
+    flex: 25%;
+    padding: 20px;
+    border: groove;
+    height:100%;
+}
+@media screen and (max-width: 600px){
+    .flexboxRow{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px){
+    .flexboxCol{
+        flex: 50%;
+    }
+}

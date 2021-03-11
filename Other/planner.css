@@ -71,3 +71,29 @@ nav{
         flex: 50%;
     }
 }
+.PRow{
+    display: flex;
+    flex-wrap: wrap;
+    background: gray;
+    height: 600px;
+    
+    
+}
+.PCol{
+    flex: 25%;
+    padding: 10px;
+    max-width: 50%;
+    border:groove;
+    border-color: black;
+
+}
+@media screen and (max-width: 600px){
+    .PRow{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 992px){
+    .PCol{
+        flex: 50%;
+    }
+}

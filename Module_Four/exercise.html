@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="exercise.css">
+    <script src="exercise.js"></script>
+</head>
+<body>
+    <h1>Web Service API Consumer Example</h1>
+    <div class="flexboxRow">
+        <div class="flexboxCol">
+            <h2>Amount of Paragraphs</h2>
+            <hr>
+            <!--Drop Down box to Determine How many Paragraphs-->
+            <label for="para">How many Paragraphs</label>
+
+                    
+            <select name="para" id="para">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select>
+            <!--Button to collect DropDown input-->
+            <input type = "button" value="Get my Bacon Ipsum!" onclick="getData()">
+
+
+        </div>
+        <!--Raw Data-->
+        <div class="flexboxCol">
+            <h2>Returned Raw Data</h2>
+            <p id = "rawData"></p>
+
+
+        </div>
+        <!--Formated Data-->
+        <div class="flexboxCol">
+            <h2>Formated Data</h2>
+            <p id = "formattedData"></p>
+
+
+        </div>
+        
+
+    </div>
+
+
+    
+</body>
+</html>
