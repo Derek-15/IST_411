@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assignment.css">
+    <script src="assignment.js"></script>
+</head>
+<body>
+    <div class="flexboxRow">
+        <div class="flexboxCol">
+            <h1>Obtain User Information </h1>
+            <label for="select">All meat or Meat with filler</label>
+
+                    
+            <select name="select" id="select">
+                <option value='all'>All Meat</option>
+                <option value='filler'>Meat and filler</option>
+            </select>
+            <br>
+            
+            <label for="para">How many Paragraphs</label>
+
+                    
+            <select name="para" id="para">
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+            </select>
+            <br>
+            <label for="alg">Which Algorithm</label>
+
+            <select name="alg" id="alg">
+                <option value='algOne'> Algorithm One</option>
+                <option value='algTwo'> Algorithm Two</option>
+            </select>
+            <br>
+            <input type = "button" value="Get my Bacon Ipsum!" onclick="getAPI()">
+
+        </div>
+        <div class="flexboxCol">
+            <h1>Returned data in raw form</h1>
+            <p id="raw"></p>
+
+        </div>
+        <div class="flexboxCol">
+            <h1>Returned data as formatted paragraphs</h1>
+            <p id="formatted"></p>
+
+        </div>
+        <div class="flexboxCol">
+            <h1>Returned data after encrypted</h1>
+            <p id="crypt"></p>
+
+        </div>
+    </div>
+</body>
+</html>
