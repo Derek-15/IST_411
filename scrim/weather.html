@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Album example · Bootstrap v5.0</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+
+    <!-- Bootstrap core CSS -->
+
+
+
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+
+        <strong>Weather</strong>
+      </a>
+
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Weather</h1>
+        <p class="lead text-muted">All Meat and Meat and Filler API Call to Encryption</p>
+
+
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+        <div class="col">
+        
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Input</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Weather Input</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text">
+                    <p class = 'card-text'>
+                        <label for="place">Which Place?</label> 
+                        <select name="place" id="place">
+                            <option value='oax'>Omaha</option>
+                            <option value='lbf'>North Platte</option>
+                            <option value='gid'>Hastings</option>
+                            <option value='boy'>Denver</option>
+                        </select>
+
+                    <input type = "button" value="Get Weather" onclick="weatherGet()">
+
+                    </p>
+
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Raw Data</text></svg>
+
+            <div class="card-body">
+              <p class="card-text">Returned Weather</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text">
+
+                
+                    <p id="indPlace"></p>
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+       
+
+    </div>
+  </div>
+
+</main>
+
+
+      
+  </body>
+</html>
