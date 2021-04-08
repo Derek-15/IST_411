@@ -97,3 +97,29 @@ nav{
         flex: 50%;
     }
 }
+
+.calcRow{
+    display: flex;
+    flex-wrap: wrap;
+}
+.calcCol{
+    flex: 25%;
+
+
+}
+@media screen and (max-width: 600px){
+    .calcRow{
+        flex-direction:column;
+    }
+}
+@media screen and (max-width: 992px){
+    .calcCol{
+        flex: 50%;
+    }
+}
+table{
+    text-align: center;
+}
+table.td{
+    padding: 0px;
+}
