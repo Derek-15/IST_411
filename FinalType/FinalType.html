@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <link rel="icon" href="MyMedia/2475199.png">
+    <title>Stock Information Search</title>
+    <link rel="stylesheet" href="finalType.css">
+    <script src="finalType.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+
+    <!-- Bootstrap core CSS -->
+
+
+
+
+    
+  </head>
+  <body>
+    
+<header>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+
+        <strong>Stock Search</strong>
+      </a>
+
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="py-5 text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Stock Search</h1>
+        <p class="lead text-muted">Find a Stock and its information by inputing stock symbol!</p>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2">
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Daily Stock</text></svg>
+
+            <div class="card-body">
+
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="card-text">
+                    <!--daily stock symbol input-->
+                    <label for="dss">Enter Stock Symbol:</label>
+                    <input type="text" id="dss" name="dss"><br><br>
+                        
+          
+  
+                    <br>
+                    <input type = "button" value="Get Stock Information" onclick="getDailyAPI()">
+                </p>
+                <br>
+
+
+                <br>
+                <p class = "card-text" id="dstText"></p>
+                <p class = "card-text" id="dssText"></p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Overview of Stock</text></svg>
+    
+                <div class="card-body">
+
+                  <div class="d-flex justify-content-between align-items-center">
+                    <p class="card-text">
+                        <!--monthly stock symbol input-->
+                        <label for="oss">Enter Stock Symbol:</label>
+                        <input type="text" id="oss" name="oss"><br><br>
+                   
+                            
+              
+      
+                        <br>
+                        <input type = "button" value="Get Stock Information" onclick="getOverViewAPI()">
+                        <br>
+                        <p class = "card-text" id="ossText"></p>
+                        
+                    </p>
+                    
+                    <p class = "card-text" id="ossTest"></p>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+        </div>
+
+
+    
+
+    </div>
+  </div>
+
+</main>
+
+
+      
+  </body>
+</html>
